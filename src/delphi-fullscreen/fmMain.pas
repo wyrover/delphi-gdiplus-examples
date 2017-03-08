@@ -43,6 +43,9 @@ begin
     $33: Self.flag := 3;
     $34: Self.flag := 4;
     $35: Self.flag := 5;
+    $36: Self.flag := 6;
+    $37: Self.flag := 7;
+    $38: Self.flag := 8;
   end;
 
   Self.FormPaint(nil);
@@ -57,6 +60,9 @@ end;
 procedure TMainForm.FormPaint(Sender: TObject);
 var
   g: TGPGraphics;
+  hBrush: TGPHatchBrush;
+  pen: TGPPen;
+  linGrBrush: TGPLinearGradientBrush;
 begin
   g := TGPGraphics.Create(Self.Canvas.Handle);
   try
@@ -72,9 +78,48 @@ begin
         g.Clear(MakeColor(255, 0, 255, 0));
       5:
         g.Clear(MakeColor(255, 0, 0, 255));
+      6:
+        begin
+           hBrush := TGPHatchBrush.Create(HatchStyleLightHorizontal, MakeColor(255, 255, 0, 0),
+            MakeColor(255, 128, 255, 255));
+            g.FillRectangle(hBrush, 0, 0, Self.Width, Self.Height);
+            if hBrush <> nil then
+            begin
+             hBrush.Free;
+             hBrush := nil;
+            end;
+        end;
+      7:
+        begin
+           hBrush := TGPHatchBrush.Create(HatchStyleLightVertical, MakeColor(255, 255, 0, 0),
+            MakeColor(255, 128, 255, 255));
+            g.FillRectangle(hBrush, 0, 0, Self.Width, Self.Height);
+            if hBrush <> nil then
+            begin
+             hBrush.Free;
+             hBrush := nil;
+            end;
+        end;
+        8:
+        begin
+           linGrBrush := TGPLinearGradientBrush.Create(
+   MakePoint(0, 0),
+   MakePoint(Self.Width, Self.Height),
+   MakeColor(255, 0, 0, 255),  // blue
+   MakeColor(255, 255, 0, 0)   // red
+   );
+            g.FillRectangle(linGrBrush, 0, 0, Self.Width, Self.Height);
+            if linGrBrush <> nil then
+            begin
+             linGrBrush.Free;
+             linGrBrush := nil;
+            end;
+        end;
     end;
 
   finally
+
+    
     g.Free;
   end;
 end;

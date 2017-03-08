@@ -18,6 +18,7 @@ object MainForm: TMainForm
   PixelsPerInch = 96
   TextHeight = 13
   object tmr1: TTimer
+    Enabled = False
     Interval = 200
     OnTimer = tmr1Timer
     Left = 320
