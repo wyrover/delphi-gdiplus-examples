@@ -1,0 +1,279 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = GDITEST82.exe GDITEST81.exe GDITEST80.exe GDITEST79.exe \
+  GDITEST78.exe GDITEST77.exe GDITEST76.exe GDITEST75.exe GDITEST74.exe \
+  GDITEST73.exe GDITEST72.exe GDITEST71.exe GDITEST70.exe GDITEST69.exe \
+  GDITEST68.exe GDITEST67.exe GDITEST66.exe GDITEST65.exe GDITEST64.exe \
+  GDITEST63.exe GDITEST62.exe GDITEST61.exe GDITEST60.exe GDITEST59.exe \
+  GDITEST58.exe GDITEST57.exe GDITEST56.exe GDITEST55.exe GDITEST54.exe \
+  GDITEST53.exe GDITEST52.exe GDITEST51.exe GDITEST50.exe GDITEST49.exe \
+  GDITEST48.exe GDITEST46.exe GDITEST45.exe GDITEST44.exe GDITEST43.exe \
+  GDITEST42.exe GDITEST41.exe GDITEST40.exe GDITEST39.exe GDITEST38.exe \
+  GDITEST37.exe GDITEST36.exe GDITEST35.exe GDITEST34.exe GDITEST33.exe \
+  GDITEST32.exe GDITEST31.exe GDITEST30.exe GDITEST29.exe GDITEST28.exe \
+  GDITEST27.exe GDITEST26.exe GDITEST25.exe GDITEST24.exe GDITEST23.exe \
+  GDITEST22.exe GDITEST21.exe GDITEST20.exe GDITEST19.exe GDITEST18.exe \
+  GDITEST17.exe GDITEST16.exe GDITEST15.exe GDITEST14.exe GDITEST13.exe \
+  GDITEST12.exe GDITEST11.exe GDITEST10.exe GDITEST9.exe GDITEST8.exe \
+  GDITEST7.exe GDITEST6.exe GDITEST5.exe GDITEST4.exe GDITEST3.exe GDITEST2.exe \
+  GDITEST1.exe GDITEST0.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+GDITEST82.exe: Filling Shapes with a Gradient Brush\Creating a Path Gradient\Specifying Points on the Boundary\APP2\GDITEST82.dpr
+  $(DCC)
+
+GDITEST81.exe: Filling Shapes with a Gradient Brush\Creating a Path Gradient\Specifying Points on the Boundary\APP1\GDITEST81.dpr
+  $(DCC)
+
+GDITEST80.exe: Filling Shapes with a Gradient Brush\Creating a Path Gradient\Customizing a Path Gradient\APP2\GDITEST80.dpr
+  $(DCC)
+
+GDITEST79.exe: Filling Shapes with a Gradient Brush\Creating a Path Gradient\Customizing a Path Gradient\APP1\GDITEST79.dpr
+  $(DCC)
+
+GDITEST78.exe: Using Images, Bitmaps, and Metafiles\Reading and Writing Metadata\Write\GDITEST78.dpr
+  $(DCC)
+
+GDITEST77.exe: Using Images, Bitmaps, and Metafiles\Reading and Writing Metadata\test\GDITEST77.dpr
+  $(DCC)
+
+GDITEST76.exe: Using Images, Bitmaps, and Metafiles\Reading and Writing Metadata\Read\GDITEST76.dpr
+  $(DCC)
+
+GDITEST75.exe: Using Image Encoders and Decoders\Determining the Parameters Supported by an Encoder\Using the EncoderValue Enumeration\GDITEST75.dpr
+  $(DCC)
+
+GDITEST74.exe: Using Image Encoders and Decoders\Determining the Parameters Supported by an Encoder\Listing Parameters and Values for All Encoders\GDITEST74.dpr
+  $(DCC)
+
+GDITEST73.exe: Using Image Encoders and Decoders\Creating and Saving a Multiple-Frame Image\Enumerate frames\GDITEST73.dpr
+  $(DCC)
+
+GDITEST72.exe: Using Graphics Containers\The State of a Graphics Object\Transformations\GDITEST72.dpr
+  $(DCC)
+
+GDITEST71.exe: Using Graphics Containers\The State of a Graphics Object\Quality Settings\GDITEST71.dpr
+  $(DCC)
+
+GDITEST70.exe: Using Graphics Containers\The State of a Graphics Object\Clipping Region\GDITEST70.dpr
+  $(DCC)
+
+GDITEST69.exe: Using Graphics Containers\Nested Graphics Containers\Transformations in Nested Containers\GDITEST69.dpr
+  $(DCC)
+
+GDITEST68.exe: Using Graphics Containers\Nested Graphics Containers\Several Layers of Nested Containers\GDITEST68.dpr
+  $(DCC)
+
+GDITEST67.exe: Using Graphics Containers\Nested Graphics Containers\Clipping in Nested Containers\GDITEST67.dpr
+  $(DCC)
+
+GDITEST66.exe: Recoloring\Scaling Colors\App2\GDITEST66.dpr
+  $(DCC)
+
+GDITEST65.exe: Recoloring\Scaling Colors\App1\GDITEST65.dpr
+  $(DCC)
+
+GDITEST64.exe: Filling Shapes with a Gradient Brush\Creating a Path Gradient\Setting the Center Point\GDITEST64.dpr
+  $(DCC)
+
+GDITEST63.exe: Filling Shapes with a Gradient Brush\Creating a Linear Gradient\Horizontal Linear Gradients\GDITEST63.dpr
+  $(DCC)
+
+GDITEST62.exe: Filling Shapes with a Gradient Brush\Creating a Linear Gradient\Diagonal Linear Gradients\GDITEST62.dpr
+  $(DCC)
+
+GDITEST61.exe: Filling Shapes with a Gradient Brush\Creating a Linear Gradient\Customizing Linear Gradients\GDITEST61.dpr
+  $(DCC)
+
+GDITEST60.exe: Constructing and Drawing Curves\Drawing Cardinal Splines\App3\GDITEST60.dpr
+  $(DCC)
+
+GDITEST59.exe: Constructing and Drawing Curves\Drawing Cardinal Splines\App2\GDITEST59.dpr
+  $(DCC)
+
+GDITEST58.exe: Constructing and Drawing Curves\Drawing Cardinal Splines\App1\GDITEST58.dpr
+  $(DCC)
+
+GDITEST57.exe: Constructing and Drawing Curves\Drawing Bézier Splines\App2\GDITEST57.dpr
+  $(DCC)
+
+GDITEST56.exe: Constructing and Drawing Curves\Drawing Bézier Splines\App1\GDITEST56.dpr
+  $(DCC)
+
+GDITEST55.exe: Using Text and Fonts\Obtaining Font Metrics\GDITEST55.dpr
+  $(DCC)
+
+GDITEST54.exe: Using Text and Fonts\Formatting Text\GDITEST54.dpr
+  $(DCC)
+
+GDITEST53.exe: Using Text and Fonts\Enumerating Installed Fonts\GDITEST53.dpr
+  $(DCC)
+
+GDITEST52.exe: Using Text and Fonts\Drawing Text\GDITEST52.dpr
+  $(DCC)
+
+GDITEST51.exe: Using Text and Fonts\Creating a Private Font Collection\GDITEST51.dpr
+  $(DCC)
+
+GDITEST50.exe: Using Text and Fonts\Antialiasing with Text\GDITEST50.dpr
+  $(DCC)
+
+GDITEST49.exe: Using Regions\Hit Testing with a Region\GDITEST49.dpr
+  $(DCC)
+
+GDITEST48.exe: Using Regions\Clipping with a Region\GDITEST48.dpr
+  $(DCC)
+
+GDITEST46.exe: Using Images, Bitmaps, and Metafiles\Using Interpolation Mode to Control Image Quality During Scaling\GDITEST46.dpr
+  $(DCC)
+
+GDITEST45.exe: Using Images, Bitmaps, and Metafiles\Using a Cached Bitmap to Improve Performance\GDITEST45.dpr
+  $(DCC)
+
+GDITEST44.exe: Using Images, Bitmaps, and Metafiles\Rotating, Reflecting, and Skewing Images\GDITEST44.dpr
+  $(DCC)
+
+GDITEST43.exe: Using Images, Bitmaps, and Metafiles\Recording Metafiles\GDITEST43.dpr
+  $(DCC)
+
+GDITEST42.exe: Using Images, Bitmaps, and Metafiles\Loading and Displaying Metafiles\GDITEST42.dpr
+  $(DCC)
+
+GDITEST41.exe: Using Images, Bitmaps, and Metafiles\Loading and Displaying Bitmaps\GDITEST41.dpr
+  $(DCC)
+
+GDITEST40.exe: Using Images, Bitmaps, and Metafiles\Improving Performance by Avoiding Automatic Scaling\GDITEST40.dpr
+  $(DCC)
+
+GDITEST39.exe: Using Images, Bitmaps, and Metafiles\Cropping and Scaling Images\GDITEST39.dpr
+  $(DCC)
+
+GDITEST38.exe: Using Images, Bitmaps, and Metafiles\Creating Thumbnail Images\GDITEST38.dpr
+  $(DCC)
+
+GDITEST37.exe: Using Image Encoders and Decoders\Transforming a JPEG Image Without Loss of Information\GDITEST37.dpr
+  $(DCC)
+
+GDITEST36.exe: Using Image Encoders and Decoders\Setting JPEG Compression Level\GDITEST36.dpr
+  $(DCC)
+
+GDITEST35.exe: Using Image Encoders and Decoders\Listing Installed Encoders\GDITEST35.dpr
+  $(DCC)
+
+GDITEST34.exe: Using Image Encoders and Decoders\Listing Installed Decoders\GDITEST34.dpr
+  $(DCC)
+
+GDITEST33.exe: Using Image Encoders and Decoders\Determining the Parameters Supported by an Encoder\GDITEST33.dpr
+  $(DCC)
+
+GDITEST32.exe: Using Image Encoders and Decoders\Creating and Saving a Multiple-Frame Image\GDITEST32.dpr
+  $(DCC)
+
+GDITEST31.exe: Using Image Encoders and Decoders\Copying Individual Frames from a Multiple-Frame Image\GDITEST31.dpr
+  $(DCC)
+
+GDITEST30.exe: Using Image Encoders and Decoders\Converting a BMP Image to a PNG Image\GDITEST30.dpr
+  $(DCC)
+
+GDITEST29.exe: Using a Pen to Draw Lines and Shapes\Using a Pen to Draw Lines and Rectangles\GDITEST29.dpr
+  $(DCC)
+
+GDITEST28.exe: Using a Pen to Draw Lines and Shapes\Setting Pen Width and Alignment\GDITEST28.dpr
+  $(DCC)
+
+GDITEST27.exe: Using a Pen to Draw Lines and Shapes\Joining Lines\GDITEST27.dpr
+  $(DCC)
+
+GDITEST26.exe: Using a Pen to Draw Lines and Shapes\Drawing a Line with Line Caps\GDITEST26.dpr
+  $(DCC)
+
+GDITEST25.exe: Using a Pen to Draw Lines and Shapes\Drawing a Line Filled with a Texture\GDITEST25.dpr
+  $(DCC)
+
+GDITEST24.exe: Using a Pen to Draw Lines and Shapes\Drawing a Custom Dashed Line\GDITEST24.dpr
+  $(DCC)
+
+GDITEST23.exe: Using a Brush to Fill Shapes\Tiling a Shape with an Image\GDITEST23.dpr
+  $(DCC)
+
+GDITEST22.exe: Using a Brush to Fill Shapes\Filling a Shape with an Image Texture\GDITEST22.dpr
+  $(DCC)
+
+GDITEST21.exe: Using a Brush to Fill Shapes\Filling a Shape with a Solid Color\GDITEST21.dpr
+  $(DCC)
+
+GDITEST20.exe: Using a Brush to Fill Shapes\Filling a Shape with a Hatch Pattern\GDITEST20.dpr
+  $(DCC)
+
+GDITEST19.exe: Transformations\Using the World Transformation\GDITEST19.dpr
+  $(DCC)
+
+GDITEST18.exe: Special\Using DriverString\GDITEST18.dpr
+  $(DCC)
+
+GDITEST17.exe: Special\Using CharacterRanges\GDITEST17.dpr
+  $(DCC)
+
+GDITEST16.exe: Special\EnumerateMetafile\GDITEST16.dpr
+  $(DCC)
+
+GDITEST15.exe: Recoloring\Using a Color Remap Table\GDITEST15.dpr
+  $(DCC)
+
+GDITEST14.exe: Recoloring\Using a Color Matrix to Transform a Single Color\GDITEST14.dpr
+  $(DCC)
+
+GDITEST13.exe: Recoloring\Translating Colors\GDITEST13.dpr
+  $(DCC)
+
+GDITEST12.exe: Recoloring\Shearing Colors\GDITEST12.dpr
+  $(DCC)
+
+GDITEST11.exe: Recoloring\Rotating Colors\GDITEST11.dpr
+  $(DCC)
+
+GDITEST10.exe: Printing\Sending GDI+ Output to a Printer\GDITEST10.dpr
+  $(DCC)
+
+GDITEST9.exe: Getting Started\Drawing a String\GDITEST9.dpr
+  $(DCC)
+
+GDITEST8.exe: Getting Started\Drawing a Line\GDITEST8.dpr
+  $(DCC)
+
+GDITEST7.exe: Filling Shapes with a Gradient Brush\Creating a Path Gradient\GDITEST7.dpr
+  $(DCC)
+
+GDITEST6.exe: Constructing and Drawing Paths\Filling Open Figures\GDITEST6.dpr
+  $(DCC)
+
+GDITEST5.exe: Constructing and Drawing Paths\Creating Figures from Lines, Curves, and Shapes\GDITEST5.dpr
+  $(DCC)
+
+GDITEST4.exe: Alpha Blending Lines and Fills\Using Compositing Mode to Control Alpha Blending\GDITEST4.dpr
+  $(DCC)
+
+GDITEST3.exe: Alpha Blending Lines and Fills\Using a Color Matrix to Set Alpha Values in Images\GDITEST3.dpr
+  $(DCC)
+
+GDITEST2.exe: Alpha Blending Lines and Fills\Setting the Alpha Values of Individual Pixels\GDITEST2.dpr
+  $(DCC)
+
+GDITEST1.exe: Alpha Blending Lines and Fills\Drawing with Opaque and Semitransparent Brushes\GDITEST1.dpr
+  $(DCC)
+
+GDITEST0.exe: Alpha Blending Lines and Fills\Drawing Opaque and Semitransparent Lines\GDITEST0.dpr
+  $(DCC)
+
+
