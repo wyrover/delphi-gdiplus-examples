@@ -1,7 +1,7 @@
 program delphi_fullscreen;
 
 uses
-  Vcl.Forms,
+  Forms,
   fmMain in 'fmMain.pas' {Form1};
 
 {$R *.res}
